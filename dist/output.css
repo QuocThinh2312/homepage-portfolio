@@ -13,8 +13,6 @@
     --spacing: 0.25rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-xs: 0.125rem;
@@ -25,9 +23,12 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-primary: "Heebo", sans-serif;
+    --text-body: 1rem;
     --text-interactive: clamp(1rem, 0.5833rem + 1.0417vw, 1.25rem);
-    --text-heading-size: clamp(2rem, 0.75rem + 3.125vw, 2.75rem);
-    --color-heading-color: #21243d;
+    --text-title-post: clamp(1.375rem, 0.9583rem + 1.0417vw, 1.625rem);
+    --text-heading-page: clamp(2rem, 0.75rem + 3.125vw, 2.75rem);
+    --text-heading-section: clamp(1.25rem, 1.0417rem + 0.5208vw, 1.375rem);
+    --color-body-color: #21243d;
     --color-btn-primary: #ff6464;
   }
 }
@@ -186,17 +187,65 @@
   .-top-4 {
     top: calc(var(--spacing) * -4);
   }
+  .mx-6 {
+    margin-inline: calc(var(--spacing) * 6);
+  }
+  .mx-6\.5 {
+    margin-inline: calc(var(--spacing) * 6.5);
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
+  }
+  .my-6\.5 {
+    margin-block: calc(var(--spacing) * 6.5);
+  }
+  .my-\[16px_12\[x\]\] {
+    margin-block: 16px 12[x];
+  }
+  .my-\[16px_12px\] {
+    margin-block: 16px 12px;
   }
   .my-\[64px_32px\] {
     margin-block: 64px 32px;
   }
-  .my-\[80px_32px\] {
-    margin-block: 80px 32px;
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-5\.5 {
+    margin-bottom: calc(var(--spacing) * 5.5);
+  }
+  .mb-\[22px\] {
+    margin-bottom: 22px;
+  }
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
+  }
+  .grid {
+    display: grid;
   }
   .inline-block {
     display: inline-block;
@@ -219,20 +268,23 @@
   .min-h-11\.75 {
     min-height: calc(var(--spacing) * 11.75);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
-  .w-60 {
-    width: calc(var(--spacing) * 60);
-  }
-  .w-60\.75 {
-    width: calc(var(--spacing) * 60.75);
+  .w-\[1px\] {
+    width: 1px;
   }
   .w-\[calc\(100\%-48px\)\] {
     width: calc(100% - 48px);
   }
   .w-full {
     width: 100%;
+  }
+  .w-px {
+    width: 1px;
   }
   .max-w-214 {
     max-width: calc(var(--spacing) * 214);
@@ -252,6 +304,12 @@
   .resize {
     resize: both;
   }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -264,11 +322,17 @@
   .items-start {
     align-items: flex-start;
   }
+  .justify-between {
+    justify-content: space-between;
+  }
   .justify-center {
     justify-content: center;
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -292,6 +356,12 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#EDF7FA\] {
+    background-color: #EDF7FA;
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-btn-primary {
     background-color: var(--color-btn-primary);
   }
@@ -301,11 +371,38 @@
   .object-cover {
     object-fit: cover;
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .py-6\.5 {
+    padding-block: calc(var(--spacing) * 6.5);
+  }
+  .py-\[24px_28px\] {
+    padding-block: 24px 28px;
+  }
   .py-\[28px_12px\] {
     padding-block: 28px 12px;
+  }
+  .py-\[28px_32px\] {
+    padding-block: 28px 32px;
+  }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
+  }
+  .pl-6\.5 {
+    padding-left: calc(var(--spacing) * 6.5);
+  }
+  .pl-\[26px\] {
+    padding-left: 26px;
   }
   .font-primary {
     font-family: var(--font-primary);
@@ -314,15 +411,20 @@
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
+  .text-body {
+    font-size: var(--text-body);
   }
-  .text-heading-size {
-    font-size: var(--text-heading-size);
+  .text-heading-page {
+    font-size: var(--text-heading-page);
+  }
+  .text-heading-section {
+    font-size: var(--text-heading-section);
   }
   .text-interactive {
     font-size: var(--text-interactive);
+  }
+  .text-title-post {
+    font-size: var(--text-title-post);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -332,11 +434,11 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .text-\[\#00A8CC\] {
+    color: #00A8CC;
+  }
   .text-black {
     color: var(--color-black);
-  }
-  .text-heading-color {
-    color: var(--color-heading-color);
   }
   .text-white {
     color: var(--color-white);
@@ -373,9 +475,21 @@
     .hover\:underline:hover {
       text-decoration-line: underline;
     }
+    .hover\:opacity-40:hover {
+      opacity: 40%;
+    }
+    .hover\:opacity-60:hover {
+      opacity: 60%;
+    }
+    .hover\:opacity-80:hover {
+      opacity: 80%;
+    }
   }
   .active\:scale-\[0\.96\]:active {
     scale: 0.96;
+  }
+  .active\:opacity-80:active {
+    opacity: 80%;
   }
   @media (width < 48rem) {
     .max-md\:hidden {
@@ -394,6 +508,9 @@
     .md\:max-w-124\.25 {
       max-width: calc(var(--spacing) * 124.25);
     }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     .md\:flex-row {
       flex-direction: row;
     }
@@ -408,12 +525,12 @@
     .lg\:my-\[144px_71px\] {
       margin-block: 144px 71px;
     }
-    .lg\:gap-28\.75 {
-      gap: calc(var(--spacing) * 28.75);
-    }
   }
 }
 @layer base {
+  body {
+    color: var(--color-body-color);
+  }
   button {
     cursor: pointer;
   }

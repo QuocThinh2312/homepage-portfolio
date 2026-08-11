@@ -52,12 +52,12 @@
       >
         <div class="flex flex-col items-start gap-9.5">
           <hgroup class="flex flex-col gap-6 md:gap-10">
-            <h1 class="text-heading-color text-heading-size font-bold">
+            <h1 class="text-heading-page font-bold">
               Hi, I am Ta Hoang An,
               <br class="max-md:hidden" />
               Fullstack Instructor
             </h1>
-            <p class="text-heading-color w-full text-base md:max-w-124.25">
+            <p class="w-full text-base md:max-w-124.25">
               With 13 years of experience in software development, from
               international programming competitions to real-world projects and
               teaching. I focus on practical knowledge, programming mindset, and
@@ -66,7 +66,7 @@
           </hgroup>
 
           <button
-            class="bg-btn-primary hover:bg-btn-primary/80 text-interactive inline-flex min-h-11.75 min-w-52 animate-pulse items-center justify-center rounded-xs font-medium text-white"
+            class="bg-btn-primary text-interactive inline-flex min-h-11.75 min-w-52 animate-pulse items-center justify-center rounded-xs font-medium text-white hover:opacity-80"
           >
             Download Resume
           </button>
@@ -84,5 +84,71 @@
         </div>
       </div>
     </section>
+
+    <main>
+      <section class="bg-[#EDF7FA] py-[28px_32px]">
+        <div class="mx-auto w-[calc(100%-48px)] max-w-214">
+          <div class="mb-5.5 flex items-center justify-between">
+            <h2 class="text-heading-section">Recent posts</h2>
+            <a
+              href="https://unicode.vn/bai-viet"
+              class="text-body active:opacity text-[#00A8CC] hover:underline active:opacity-80"
+              target="_blank"
+            >
+              View all
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+            <article class="bg-white px-6 py-[24px_28px]">
+              <a
+                href="https://unicode.vn/bai-viet/tu-bo-su-met-moi-cua-nodejs-toi-mang-kien-truc-cua-laravel-len-fastify-va-tao-ra-struxjs"
+                target="_blank"
+                class="hover:opacity-60"
+              >
+                <h3 class="text-title-post line-clamp-2 font-bold">
+                  Từ bỏ sự mệt mỏi của Node.js: Tôi mang kiến trúc của Laravel
+                  lên Fastify và tạo ra StruxJS
+                </h3>
+              </a>
+
+              <div class="my-[16px_12px] flex">
+                <time datetime="2026-07-31">July 31, 2026</time>
+                <span class="mx-6.5 block w-px bg-black"></span>
+                <span>Node.js, Fastify</span>
+              </div>
+
+              <p class="text-body line-clamp-3">
+                StruxJS combines the speed of Fastify with the familiar
+                architecture and developer experience of Laravel.
+              </p>
+            </article>
+
+            <article class="bg-white px-6 py-[24px_28px]">
+              <a
+                href="https://unicode.vn/bai-viet/cau-truc-thu-muc-react-cho-nguoi-moi-bat-dau"
+                target="_blank"
+                class="hover:opacity-60"
+              >
+                <h3 class="text-title-post line-clamp-2 font-bold">
+                  React Folder Structure for Beginners
+                </h3>
+              </a>
+
+              <div class="my-[16px_12px] flex">
+                <time datetime="2026-07-15">July 15, 2026</time>
+                <span class="mx-6.5 block w-px bg-black"></span>
+                <span>React, Frontend</span>
+              </div>
+
+              <p class="text-body line-clamp-3">
+                Learn how to organize your React project from simple folder
+                layouts to scalable feature-based architecture.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
