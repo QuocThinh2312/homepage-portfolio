@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Heebo", sans-serif;
+
+  --text-body: 1rem;
+  --text-interactive: clamp(1rem, 0.5833rem + 1.0417vw, 1.25rem);
+  --text-title-post: clamp(1.375rem, 0.9583rem + 1.0417vw, 1.625rem);
+  --text-title-featured: clamp(1.625rem, 1.2083rem + 1.0417vw, 1.875rem);
+  --text-heading-size: clamp(2rem, 0.75rem + 3.125vw, 2.75rem);
+
+  --color-heading-color: #21243d;
+  --color-btn-primary: #ff6464;
+
+  --animate-pulse: pulse 1.5s ease-in-out infinite;
+
+  @keyframes pulse {
+    0% {
+      box-shadow: rgb(from var(--color-btn-primary) r g b / 40%) 0px 0px 0px 0px;
+    }
+    70% {
+      transform: scale(1.05);
+      box-shadow: rgb(from var(--color-btn-primary) r g b / 0%) 0px 0px 0px 15px;
+    }
+    100% {
+      box-shadow: rgb(from var(--color-btn-primary) r g b / 0%) 0px 0px 0px 0px;
+    }
+  }
+}
+
+@layer base {
+  button {
+    cursor: pointer;
+  }
+}

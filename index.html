@@ -1,11 +1,88 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio UI</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio UI</title>
 
-        <link rel="stylesheet" href="./dist/output.css" />
-    </head>
-    <body></body>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="font-primary bg-white">
+    <!-- Header -->
+    <header class="sticky -top-4 bg-white py-[28px_12px] sm:pr-15">
+      <nav>
+        <ul class="flex items-center justify-end">
+          <li class="px-4">
+            <a
+              href="#!"
+              class="text-interactive inline-block font-medium text-black transition-transform duration-150 hover:underline active:scale-[0.96]"
+              >Works</a
+            >
+          </li>
+          <li class="px-4">
+            <a
+              href="#!"
+              class="text-interactive inline-block font-medium text-black transition-transform duration-150 hover:underline active:scale-[0.96]"
+              >Blog</a
+            >
+          </li>
+          <li class="px-4">
+            <a
+              href="#!"
+              class="text-interactive inline-block font-medium text-black transition-transform duration-150 hover:underline active:scale-[0.96]"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="my-[64px_32px] lg:my-[144px_71px]">
+      <div
+        class="mx-auto flex w-[calc(100%-48px)] max-w-214 flex-col-reverse items-start gap-12 md:flex-row md:gap-28.75"
+      >
+        <div class="flex flex-col items-start gap-9.5">
+          <hgroup class="flex flex-col gap-6 md:gap-10">
+            <h1 class="text-heading-color text-heading-size font-bold">
+              Hi, I am Ta Hoang An,
+              <br class="max-md:hidden" />
+              Fullstack Instructor
+            </h1>
+            <p class="text-heading-color w-full text-base md:max-w-124.25">
+              With 13 years of experience in software development, from
+              international programming competitions to real-world projects and
+              teaching. I focus on practical knowledge, programming mindset, and
+              helping developers build a strong foundation for their careers.
+            </p>
+          </hgroup>
+
+          <button
+            class="bg-btn-primary hover:bg-btn-primary/80 text-interactive inline-flex min-h-11.75 min-w-52 animate-pulse items-center justify-center rounded-xs font-medium text-white"
+          >
+            Download Resume
+          </button>
+        </div>
+
+        <div class="mx-auto aspect-square w-48 md:w-60.75">
+          <img
+            src="./assets/images/hero-img.webp"
+            class="h-full w-full rounded-full object-cover"
+            alt="Hoàng An Unicode"
+            width="1365"
+            height="1365"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
