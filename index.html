@@ -13,6 +13,15 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body class="font-primary bg-white">
@@ -86,6 +95,7 @@
     </section>
 
     <main>
+      <!-- Posts -->
       <section class="bg-[#EDF7FA] py-[28px_32px]">
         <div class="mx-auto w-[calc(100%-48px)] max-w-214">
           <div class="mb-5.5 flex items-center justify-between">
@@ -107,15 +117,15 @@
                 class="hover:opacity-60"
               >
                 <h3 class="text-title-post line-clamp-2 font-bold">
-                  Từ bỏ sự mệt mỏi của Node.js: Tôi mang kiến trúc của Laravel
-                  lên Fastify và tạo ra StruxJS
+                  Bringing Laravel Architecture to Fastify with StruxJS
                 </h3>
               </a>
 
-              <div class="my-[16px_12px] flex">
-                <time datetime="2026-07-31">July 31, 2026</time>
-                <span class="mx-6.5 block w-px bg-black"></span>
-                <span>Node.js, Fastify</span>
+              <div class="my-[16px_12px] flex divide-x">
+                <time datetime="2026-07-31" class="text-meta pr-6.5">
+                  July 31, 2026
+                </time>
+                <span class="text-meta pl-6.5">Node.js, Fastify</span>
               </div>
 
               <p class="text-body line-clamp-3">
@@ -135,10 +145,11 @@
                 </h3>
               </a>
 
-              <div class="my-[16px_12px] flex">
-                <time datetime="2026-07-15">July 15, 2026</time>
-                <span class="mx-6.5 block w-px bg-black"></span>
-                <span>React, Frontend</span>
+              <div class="my-[16px_12px] flex divide-x">
+                <time datetime="2026-07-15" class="text-meta pr-6.5">
+                  July 15, 2026
+                </time>
+                <span class="text-meta pl-6.5">React, Frontend</span>
               </div>
 
               <p class="text-body line-clamp-3">
@@ -149,6 +160,170 @@
           </div>
         </div>
       </section>
+
+      <!-- Featured -->
+      <section class="mb-15 py-6">
+        <div class="mx-auto w-[calc(100%-48px)] max-w-214">
+          <h2 class="text-heading-section mb-7">Featured works</h2>
+
+          <div class="flex flex-col items-start gap-8">
+            <article
+              class="flex flex-col gap-4.5 border-b border-[#E0E0E0] pb-4 md:flex-row md:pb-8"
+            >
+              <a
+                href="#!"
+                class="aspect-246/180 w-full shrink-0 overflow-hidden rounded-md md:w-61.5"
+              >
+                <img
+                  src="./assets/images/featured-1.jpg"
+                  alt="Teaching, Leadership & Development"
+                  width="1920"
+                  height="1280"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover transition-transform duration-200 hover:scale-[1.02]"
+                />
+              </a>
+
+              <div class="flex flex-col items-start gap-3 md:gap-5">
+                <h3 class="text-title-featured font-bold">
+                  Teaching, Leadership & Development
+                </h3>
+
+                <div class="flex items-center gap-6.5">
+                  <time
+                    datetime="2020"
+                    class="text-meta h-6.25 w-15.5 rounded-full bg-[#142850] text-center font-bold text-white"
+                    >2020</time
+                  >
+                  <span class="text-interactive text-[#8695A4]">Teaching</span>
+                </div>
+
+                <p class="text-body">
+                  Building professional programming training programs,
+                  e-learning systems, and high-quality online and offline
+                  classes.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col gap-4.5 border-b border-[#E0E0E0] pb-4 md:flex-row md:pb-8"
+            >
+              <a
+                href="#!"
+                class="aspect-246/180 w-full shrink-0 overflow-hidden rounded-md md:w-61.5"
+              >
+                <img
+                  src="./assets/images/featured-2.jpg"
+                  alt="Senior Management & Technology"
+                  width="1920"
+                  height="1282"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover transition-transform duration-200 hover:scale-[1.02]"
+                />
+              </a>
+
+              <div class="flex flex-col items-start gap-3 md:gap-5">
+                <h3 class="text-title-featured font-bold">
+                  Senior Management & Technology
+                </h3>
+
+                <div class="flex items-center gap-6.5">
+                  <time
+                    datetime="2018"
+                    class="text-meta h-6.25 w-15.5 rounded-full bg-[#142850] text-center font-bold text-white"
+                    >2018</time
+                  >
+                  <span class="text-interactive text-[#8695A4]"
+                    >Management</span
+                  >
+                </div>
+
+                <p class="text-body">
+                  Experienced as CEO, Tech Lead, and Project Manager, with
+                  expertise in IT business analysis, sales, and corporate
+                  training.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col gap-4.5 border-b border-[#E0E0E0] pb-4 md:flex-row md:pb-8"
+            >
+              <a
+                href="#!"
+                class="aspect-246/180 w-full shrink-0 overflow-hidden rounded-md md:w-61.5"
+              >
+                <img
+                  src="./assets/images/featured-3.jpg"
+                  alt="Technical Expert"
+                  width="1920"
+                  height="1280"
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover transition-transform duration-200 hover:scale-[1.02]"
+                />
+              </a>
+
+              <div class="flex flex-col items-start gap-3 md:gap-5">
+                <h3 class="text-title-featured font-bold">Technical Expert</h3>
+
+                <div class="flex items-center gap-6.5">
+                  <time
+                    datetime="2018"
+                    class="text-meta h-6.25 w-15.5 rounded-full bg-[#142850] text-center font-bold text-white"
+                    >2018</time
+                  >
+                  <span class="text-interactive text-[#8695A4]">Fullstack</span>
+                </div>
+
+                <p class="text-body">
+                  13+ years of Fullstack Web & Mobile experience, specializing
+                  in React, Node.js, PHP, and cross-platform technologies.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="flex flex-col items-center gap-6.5 py-10 md:py-14">
+      <div class="flex items-center gap-5 md:gap-7">
+        <a
+          href="https://www.facebook.com/www.unicode.vn"
+          target="_blank"
+          class="bg-body-color hover:text-btn-primary flex h-8 w-8 items-center justify-center rounded-full text-white md:h-10 md:w-10"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.threads.com/@hoanganit"
+          target="_blank"
+          class="bg-body-color hover:text-btn-primary flex h-8 w-8 items-center justify-center rounded-full text-white md:h-10 md:w-10"
+        >
+          <i class="fab fa-threads"></i>
+        </a>
+        <a
+          href="https://youtube.com/@hoanganunicode"
+          target="_blank"
+          class="bg-body-color hover:text-btn-primary flex h-8 w-8 items-center justify-center rounded-full text-white md:h-10 md:w-10"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a
+          href="https://tiktok.com/@hoanganunicode"
+          target="_blank"
+          class="bg-body-color hover:text-btn-primary flex h-8 w-8 items-center justify-center rounded-full text-white md:h-10 md:w-10"
+        >
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+
+      <p class="text-[14px]">Copyright ©2026 All rights reserved</p>
+    </footer>
   </body>
 </html>
