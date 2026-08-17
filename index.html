@@ -47,38 +47,40 @@
   </head>
   <body class="font-primary bg-white">
     <!-- Header -->
-    <header class="sticky -top-4 bg-white py-[28px_12px] sm:pr-15">
-      <nav>
-        <ul class="flex items-center justify-end">
-          <li class="px-4">
-            <a
-              href="#!"
-              class="text-interactive inline-block font-medium text-black transition-transform duration-150 hover:underline active:scale-[0.96]"
-              >Works</a
-            >
-          </li>
-          <li class="px-4">
-            <a
-              href="#!"
-              class="text-interactive inline-block font-medium text-black transition-transform duration-150 hover:underline active:scale-[0.96]"
-              >Blog</a
-            >
-          </li>
-          <li class="px-4">
-            <a
-              href="#!"
-              class="text-interactive inline-block font-medium text-black transition-transform duration-150 hover:underline active:scale-[0.96]"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <header class="sticky -top-4 bg-white py-[28px_12px]">
+      <div class="container">
+        <nav class="flex justify-end">
+          <ul class="flex items-center">
+            <li class="px-4">
+              <a
+                href="#!"
+                class="text-interactive inline-block font-medium text-black transition-transform duration-150 hover:underline active:scale-[0.96]"
+                >Works</a
+              >
+            </li>
+            <li class="px-4">
+              <a
+                href="#!"
+                class="text-interactive inline-block font-medium text-black transition-transform duration-150 hover:underline active:scale-[0.96]"
+                >Blog</a
+              >
+            </li>
+            <li class="px-4">
+              <a
+                href="#!"
+                class="text-interactive inline-block font-medium text-black transition-transform duration-150 hover:underline active:scale-[0.96]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Hero -->
     <section class="my-[64px_32px] lg:my-[144px_71px]">
       <div
-        class="mx-auto flex w-[calc(100%-48px)] max-w-214 flex-col-reverse items-start gap-12 md:flex-row md:gap-28.75"
+        class="container flex flex-col-reverse items-start gap-12 md:flex-row md:gap-28.75"
       >
         <div class="flex flex-col items-start gap-9.5">
           <hgroup class="flex flex-col gap-6 md:gap-10">
@@ -95,11 +97,11 @@
             </p>
           </hgroup>
 
-          <button
-            class="bg-btn-primary text-interactive inline-flex min-h-11 min-w-40 animate-pulse items-center justify-center rounded-xs font-medium text-white hover:opacity-80 md:min-h-11.75 md:min-w-52"
+          <a
+            class="bg-btn-primary text-interactive inline-flex min-h-11 min-w-40 animate-pulse items-center justify-center rounded-xs font-medium text-white select-none hover:opacity-80 md:min-h-11.75 md:min-w-52"
           >
             Download Resume
-          </button>
+          </a>
         </div>
 
         <div class="mx-auto aspect-square w-48 md:w-60.75">
@@ -118,7 +120,7 @@
     <main>
       <!-- Posts -->
       <section class="bg-[#EDF7FA] py-[28px_32px]">
-        <div class="mx-auto w-[calc(100%-48px)] max-w-214">
+        <div class="container">
           <div class="mb-5.5 flex items-center justify-between">
             <h2 class="text-heading-section">Recent posts</h2>
             <a
@@ -132,21 +134,23 @@
 
           <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
             <article class="bg-white px-6 py-[24px_28px]">
-              <a
-                href="https://unicode.vn/bai-viet/tu-bo-su-met-moi-cua-nodejs-toi-mang-kien-truc-cua-laravel-len-fastify-va-tao-ra-struxjs"
-                target="_blank"
-                class="hover:opacity-60"
-              >
-                <h3 class="text-title-post line-clamp-2 font-bold">
+              <h3 class="text-title-post line-clamp-2 font-bold">
+                <a
+                  href="https://unicode.vn/bai-viet/tu-bo-su-met-moi-cua-nodejs-toi-mang-kien-truc-cua-laravel-len-fastify-va-tao-ra-struxjs"
+                  target="_blank"
+                  class="hover:opacity-70"
+                >
                   Bringing Laravel Architecture to Fastify with StruxJS
-                </h3>
-              </a>
+                </a>
+              </h3>
 
               <div class="my-[16px_12px] flex divide-x">
                 <time datetime="2026-07-31" class="text-meta pr-6.5">
                   July 31, 2026
                 </time>
-                <span class="text-meta pl-6.5">Node.js, Fastify</span>
+                <a href="#!" class="text-meta pl-6.5 hover:opacity-70"
+                  >Node.js, Fastify</a
+                >
               </div>
 
               <p class="text-body line-clamp-3">
@@ -156,21 +160,23 @@
             </article>
 
             <article class="bg-white px-6 py-[24px_28px]">
-              <a
-                href="https://unicode.vn/bai-viet/cau-truc-thu-muc-react-cho-nguoi-moi-bat-dau"
-                target="_blank"
-                class="hover:opacity-60"
-              >
-                <h3 class="text-title-post line-clamp-2 font-bold">
+              <h3 class="text-title-post line-clamp-2 font-bold">
+                <a
+                  href="https://unicode.vn/bai-viet/cau-truc-thu-muc-react-cho-nguoi-moi-bat-dau"
+                  target="_blank"
+                  class="hover:opacity-70"
+                >
                   React Folder Structure for Beginners
-                </h3>
-              </a>
+                </a>
+              </h3>
 
               <div class="my-[16px_12px] flex divide-x">
                 <time datetime="2026-07-15" class="text-meta pr-6.5">
                   July 15, 2026
                 </time>
-                <span class="text-meta pl-6.5">React, Frontend</span>
+                <a href="#!" class="text-meta pl-6.5 hover:opacity-70"
+                  >React, Frontend</a
+                >
               </div>
 
               <p class="text-body line-clamp-3">
@@ -184,7 +190,7 @@
 
       <!-- Featured -->
       <section class="mb-15 py-6">
-        <div class="mx-auto w-[calc(100%-48px)] max-w-214">
+        <div class="container">
           <h2 class="text-heading-section mb-7">Featured works</h2>
 
           <div class="flex flex-col items-start gap-8">
@@ -208,7 +214,9 @@
 
               <div class="flex flex-col items-start gap-3 md:gap-5">
                 <h3 class="text-title-featured font-bold">
-                  Teaching, Leadership & Development
+                  <a href="#!" class="hover:opacity-70"
+                    >Teaching, Leadership & Development</a
+                  >
                 </h3>
 
                 <div class="flex items-center gap-6.5">
@@ -217,7 +225,11 @@
                     class="text-meta h-6.25 w-15.5 rounded-full bg-[#142850] text-center font-bold text-white"
                     >2020</time
                   >
-                  <span class="text-interactive text-[#8695A4]">Teaching</span>
+                  <a
+                    href="#!"
+                    class="text-interactive hover:text-body-color text-[#8695A4]"
+                    >Teaching</a
+                  >
                 </div>
 
                 <p class="text-body">
@@ -248,7 +260,9 @@
 
               <div class="flex flex-col items-start gap-3 md:gap-5">
                 <h3 class="text-title-featured font-bold">
-                  Senior Management & Technology
+                  <a href="#!" class="hover:opacity-70"
+                    >Senior Management & Technology</a
+                  >
                 </h3>
 
                 <div class="flex items-center gap-6.5">
@@ -257,8 +271,10 @@
                     class="text-meta h-6.25 w-15.5 rounded-full bg-[#142850] text-center font-bold text-white"
                     >2018</time
                   >
-                  <span class="text-interactive text-[#8695A4]"
-                    >Management</span
+                  <a
+                    href="#!"
+                    class="text-interactive hover:text-body-color text-[#8695A4]"
+                    >Management</a
                   >
                 </div>
 
@@ -289,7 +305,9 @@
               </a>
 
               <div class="flex flex-col items-start gap-3 md:gap-5">
-                <h3 class="text-title-featured font-bold">Technical Expert</h3>
+                <h3 class="text-title-featured font-bold">
+                  <a href="#!" class="hover:opacity-70">Technical Expert</a>
+                </h3>
 
                 <div class="flex items-center gap-6.5">
                   <time
@@ -297,7 +315,11 @@
                     class="text-meta h-6.25 w-15.5 rounded-full bg-[#142850] text-center font-bold text-white"
                     >2018</time
                   >
-                  <span class="text-interactive text-[#8695A4]">Fullstack</span>
+                  <a
+                    href="#!"
+                    class="text-interactive hover:text-body-color text-[#8695A4]"
+                    >Fullstack</a
+                  >
                 </div>
 
                 <p class="text-body">

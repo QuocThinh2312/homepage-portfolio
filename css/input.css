@@ -39,3 +39,13 @@
     cursor: pointer;
   }
 }
+
+@utility container {
+  width: min(904px, 100%);
+  padding-inline: 24px;
+  margin-inline: auto;
+
+  @media (width >= 0) {
+    @apply max-w-none;
+  }
+}

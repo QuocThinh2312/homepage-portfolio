@@ -13,8 +13,6 @@
     --spacing: 0.25rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-xs: 0.125rem;
@@ -192,6 +190,30 @@
   .-top-4 {
     top: calc(var(--spacing) * -4);
   }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+    width: min(904px, 100%);
+    padding-inline: 24px;
+    margin-inline: auto;
+    @media (width >= 0) {
+      max-width: none;
+    }
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -273,20 +295,11 @@
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
-  .w-\[calc\(100\%-48px\)\] {
-    width: calc(100% - 48px);
-  }
   .w-full {
     width: 100%;
   }
-  .max-w-214 {
-    max-width: calc(var(--spacing) * 214);
-  }
   .min-w-40 {
     min-width: calc(var(--spacing) * 40);
-  }
-  .min-w-45 {
-    min-width: calc(var(--spacing) * 45);
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -521,9 +534,16 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
   @media (hover: hover) {
     .hover\:scale-\[1\.02\]:hover {
       scale: 1.02;
+    }
+    .hover\:text-body-color:hover {
+      color: var(--color-body-color);
     }
     .hover\:text-btn-primary:hover {
       color: var(--color-btn-primary);
@@ -531,8 +551,8 @@
     .hover\:underline:hover {
       text-decoration-line: underline;
     }
-    .hover\:opacity-60:hover {
-      opacity: 60%;
+    .hover\:opacity-70:hover {
+      opacity: 70%;
     }
     .hover\:opacity-80:hover {
       opacity: 80%;
